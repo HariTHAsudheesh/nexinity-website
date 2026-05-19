@@ -55,14 +55,32 @@
   background: #5c004d;
 }
 
-/* Mobile */
+/* Mobile navbar */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
   .nav-links {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
   }
 
   .quote-btn {
-    padding: 8px 12px;
-    font-size: 14px;
+    width: fit-content;
+    margin: auto;
   }
 }
