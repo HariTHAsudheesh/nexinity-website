@@ -58,12 +58,7 @@
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-text,
-  .hero-image {
-    width: 100%;
+    padding: 50px 20px;
   }
 
   .hero-text h1 {
@@ -71,12 +66,25 @@
   }
 
   .hero-text p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  /* FIX BUTTONS */
+  .hero-btn {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .secondary-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-image img {
     width: 220px;
-    margin-top: 30px;
-    animation: floatZoom 4s ease-in-out infinite;
+    margin-top: 20px;
   }
 }
