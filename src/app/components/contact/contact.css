@@ -129,6 +129,7 @@
   .contact-container,
   .enquiry-form {
     width: 100%;
+    max-width: 100%;
   }
 
   .contact-card {
@@ -136,7 +137,8 @@
   }
 
   .enquiry-form {
-    padding: 20px;
+    padding: 25px 15px;
+    box-sizing: border-box;
   }
 
   .enquiry-form input,
@@ -144,6 +146,7 @@
   .enquiry-form button {
     width: 100%;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   .enquiry-form textarea {
