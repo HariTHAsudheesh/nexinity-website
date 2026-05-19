@@ -1,0 +1,57 @@
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p class="subtitle">Let’s discuss your project</p>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT SIDE: Contact Details -->
+    <div class="contact-container">
+      
+      <div class="contact-card">
+        <h3>📞 Call</h3>
+        <p>
+          <a href="tel:+919075980522">+91 9075 980 522</a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>💬 WhatsApp</h3>
+        <p>
+          <a href="https://wa.me/918943058165" target="_blank">
+            +91 8943 058 165
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>✉ Email</h3>
+        <p>
+          <a href="mailto:nexinityitsolution@gmail.com?subject=Enquiry from Website&body=Hello Nexinity, I want to know about your services.">
+            nexinityitsolution@gmail.com
+        </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>📍 Location</h3>
+        <p>Pattambi, Ottapalam, Cherpulassery</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: Enquiry Form -->
+    <div class="enquiry-form">
+      <h3>Send an Enquiry</h3>
+
+      <input type="text" [(ngModel)]="name" placeholder="Your Name">
+      <input type="text" [(ngModel)]="phone" placeholder="Phone Number">
+      <input type="email" [(ngModel)]="email" placeholder="Email">
+      <textarea [(ngModel)]="message" placeholder="Your Message"></textarea>
+
+      <button (click)="sendToWhatsApp()">
+        Send via WhatsApp
+      </button>
+    </div>
+
+  </div>
+</section>
