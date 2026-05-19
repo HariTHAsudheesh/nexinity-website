@@ -25,6 +25,7 @@
 }
 
 .hero-btn {
+  display: inline-block;
   background: #7a0066;
   color: white;
   padding: 14px 28px;
@@ -32,7 +33,7 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  margin-left: 50px;
+  margin-right: 15px; /* change this */
 }
 
 .hero-image img {
@@ -70,17 +71,13 @@
   }
 
   /* FIX BUTTONS */
-  .hero-btn {
+  .hero-btn,
+  .secondary-btn {
     display: block;
     width: 100%;
     max-width: 220px;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .secondary-btn {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto !important;
+    box-sizing: border-box;
   }
 
   .hero-image img {
