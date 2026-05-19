@@ -4,7 +4,11 @@
   align-items: center;
   padding: 80px 60px;
   min-height: 80vh;
-  background: linear-gradient(to right, #ffffff, #f7eef7);
+  background:
+    linear-gradient(rgba(255,255,255,0.92), rgba(247,238,247,0.92)),
+    url('/background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-text {
@@ -37,7 +41,7 @@
 }
 
 .hero-image img {
-  width: 350px;
+  width: 550px;
   animation: float 3s ease-in-out infinite;
 }
 
