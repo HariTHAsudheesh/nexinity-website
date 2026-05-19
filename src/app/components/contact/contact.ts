@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })
-export class Contact {
+export class ContactComponent {
 
   name = '';
   phone = '';
