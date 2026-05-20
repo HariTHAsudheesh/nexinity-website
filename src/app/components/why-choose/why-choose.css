@@ -48,7 +48,11 @@
   color: #555;
   line-height: 1.6;
 }
-
+.why-card i {
+  font-size: 32px;
+  color: #7a0066;
+  margin-bottom: 15px;
+}
 /* Mobile */
 @media (max-width: 768px) {
   .why-choose {
