@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -34,4 +35,7 @@ ${this.message}`;
       '_blank'
     );
   }
+  constructor(private title: Title) {
+  this.title.setTitle('Contact Us | Nexinity');
+}
 }

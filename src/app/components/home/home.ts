@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -8,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.css',
 })
 export class HomeComponent {
-
+  constructor(private title: Title) {
+    this.title.setTitle('Nexinity | Web Design & Development');
+  }
 }
