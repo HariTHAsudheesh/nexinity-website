@@ -54,33 +54,68 @@
 .quote-btn:hover {
   background: #5c004d;
 }
-
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #7a0066;
+}
 /* Mobile navbar */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    padding: 15px 20px;
-    gap: 15px;
-  }
-
-  .logo {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .nav-links {
-    display: flex;
+    padding: 12px 20px;
+    position: relative;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  }
+
+  /* Smaller logo */
+  .logo {
+    width: auto;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .logo span {
+    font-size: 24px;
+  }
+
+  /* Show menu icon */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+  }
+
+  /* Hide nav links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    margin-top: 15px;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    gap: 15px;
+    text-align: center;
+  }
+
+  /* Show when menu opens */
+  .nav-links.active {
+    display: flex;
   }
 
   .nav-links a {
     font-size: 16px;
+    display: block;
+    padding: 8px 0;
   }
 
+  /* Hide quote button on mobile (optional) */
   .quote-btn {
-    width: fit-content;
-    margin: auto;
+    display: none;
   }
 }

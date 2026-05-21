@@ -4,7 +4,10 @@
     <!-- <span>Nexinity</span> -->
   </div>
 
-  <ul class="nav-links">
+  <div class="menu-toggle" (click)="toggleMenu()">
+    ☰
+  </div>
+  <ul class="nav-links" [class.active]="menuOpen">
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/services">Services</a></li>
     <li><a routerLink="/why-choose">Why Choose Us</a></li>
